@@ -1,12 +1,12 @@
 # API Testing Practice Project
 
-API testing project built using Apache JMeter to validate authentication, CRUD operations, and negative scenarios.
+API testing project built using Apache JMeter for functional testing (authentication, CRUD operations, negative scenarios) and basic load testing by simulating concurrent users.
 
 ---
 
 ## 📌 Overview
 
-This project focuses on testing a REST API by covering the full contact management lifecycle, including authentication, data validation, and negative scenarios.
+This project focuses on testing a REST API by covering the full contact management lifecycle, including authentication, data validation, negative scenarios, and basic load testing to evaluate API behavior under concurrent usage.
 
 ---
 
@@ -78,6 +78,14 @@ This project focuses on testing a REST API by covering the full contact manageme
 * Phone number containing characters
 
 ---
+## ⚡ Load Testing
+
+Basic load testing was performed using JMeter Thread Groups to simulate multiple concurrent users.
+
+* Configured multiple threads (virtual users)
+* Simulated concurrent API requests
+* Observed API behavior under load conditions
+* Validated response stability and consistency
 
 ## 📂 Test Data
 
@@ -101,6 +109,8 @@ Ensure the file paths are correctly configured when running the tests locally.
 * Designing negative test scenarios
 * Applying boundary value analysis
 * Using data-driven testing with CSV files
+* Performing basic load testing using JMeter
+* Simulating concurrent users with Thread Groups
 
 ---
 
@@ -110,6 +120,17 @@ Ensure the file paths are correctly configured when running the tests locally.
 * API does not return the expected error message for incorrect login credentials
 
 ---
+
+## 💡 Key Skills Demonstrated
+
+* REST API Testing
+* JMeter
+* Functional Testing
+* Negative Testing
+* Boundary Value Analysis
+* Data-Driven Testing
+* Basic Load Testing
+* Response Validation
 
 ## 🚀 Notes
 
