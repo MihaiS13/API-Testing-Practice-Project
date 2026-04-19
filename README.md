@@ -6,7 +6,10 @@ API testing project built using **Apache JMeter**, **Rest Assured**, and **Postm
 
 ## 📌 Overview
 
-This project focuses on testing a REST API by covering the full contact management lifecycle:
+This project covers testing of 2 REST APIs (DummyJSON and Contact List API)
+across 9 unique endpoints, with 25+ test scenarios executed using JMeter,
+Rest Assured, and Postman — including 19 negative tests covering boundary
+values, invalid inputs, and authentication edge cases.
 
 - Authentication
 - CRUD operations
@@ -35,7 +38,11 @@ This project focuses on testing a REST API by covering the full contact manageme
 * Postman
 * Maven
 * Java
-* JSON
+* JSON / CSV
+
+**APIs Tested:**
+* DummyJSON (https://dummyjson.com) – Postman & Rest Assured (5 endpoints, 4 automated tests)
+* Thinking Tester Contact List API – JMeter (6 endpoints, 25+ scenarios)
 
 ---
 
@@ -94,12 +101,14 @@ This project focuses on testing a REST API by covering the full contact manageme
 
 ## ⚡ Load Testing
 
-Basic load testing was performed using **JMeter Thread Groups** to simulate multiple concurrent users:
+Basic load testing performed using JMeter Thread Groups to simulate concurrent users:
 
-* Configured multiple threads (virtual users)
-* Simulated concurrent API requests
-* Observed API behavior under load conditions
-* Validated response stability and consistency
+- Configured 3 threads (virtual users) with 1s ramp-up time
+- Simulated concurrent requests across authentication and CRUD flows
+- Executed 25+ test scenarios including 19 negative tests for invalid inputs
+  (email, phone, date of birth, credentials)
+- Validated response stability with expected status codes (400, 401)
+- Covered both positive and negative scenarios under concurrent usage
 
 ---
 
